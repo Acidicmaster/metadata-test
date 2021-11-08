@@ -24,7 +24,7 @@ const options = {
     },
     servers: [
       {
-        url: "",
+        url: "https://k-metadata.herokuapp.com/",
       },
     ],
   },
