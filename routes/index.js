@@ -36,10 +36,10 @@ const specs = swaggerJsdoc(options);
 
 
 /* GET home page. */
-router.use('/', swaggerUi.serve,swaggerUi.setup(specs) );
-router.get('/' , swaggerUi.setup(specs));
-// router.get('/', function(req, res, next) {
-//   res.send('API is running');
-// });
+router.use('/docs', swaggerUi.serve,swaggerUi.setup(specs) );
+router.get('/docs' , swaggerUi.setup(specs));
+ router.get('/', function(req, res, next) {
+   res.send('API is running visit url/docs for documentation');
+ });
 
 module.exports = router;
