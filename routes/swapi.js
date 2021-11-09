@@ -39,4 +39,25 @@ router.get("/swapi",getAllFilms);
  */
 router.post("/swapi/search",filterFilmsByName);
 
+
+/**
+ * @swagger
+ * /api/swapi/search:
+ *   post:
+ *     summary: Retrieve a search list of Movies passing name.
+ *     responses:
+ *       201:
+ *         description: Search List
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                     name:
+ *                       type: string
+ *                       description: A New Hope.
+ *                       example: A New Hope
+*/
+
+
 module.exports = router;
